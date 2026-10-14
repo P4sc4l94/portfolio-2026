@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabica Home Page</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles.css">
+  <!-- <style>
+    .mobile-only {
+      display: block;
+    }
+    @media screen and (min-width:600px) {
+      .mobile-only {
+        display: none;
+      }
+    }
+  </style> -->
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top mainNav" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><span class="brand-txt fw-bold">Kelsey <span class="fw-bold dash-blue">//</span> <span style="color:#0076a0;">Hood</span></span></a>
+      <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../current-work.html">Current Work</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#web">Web &amp; UI</a> <!-- YelpCamp, MCS Site, Vue.js Shop-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#design">Graphic Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid main-content gallery-main-content">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" src="img/bg-full.jpg">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <div class="row mt-5 mx-auto">
+      <div class="col-sm-12 col-md-8 mx-auto mb-3 gallery-text-container">
+        <div class="gallery-text">
+          <h1 class="text-center fs-1">Arabica Home Page</h1>
+          <p class="fw-bold fs-4 text-muted border-subhead pt-1 text-center">2022</p>
+          <!-- <p class="lead ">Bootstrap // HTML // CSS // JavaScript</p> -->
+          <p class="pt-3 text-center">An example landing page for the Arabica Premium Coffee brand I created.</p>
+          <!-- <div class="mx-auto text-center">
+            <a href="https://p4sc4l94.github.io/arabica-page/" target="_blank" class="btn btn-dark view-btn mb-3" title="Arabica Coffee Landing Page">View Landing Page</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">About</h2>
+        <p>I wanted to build out a high fidelity mockup of my brand's landing page in order to show how the elements from my brand guide and product designs might be incorporated into a company website.</p>
+      </div>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-B-3000x1500_d6klp2.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-B-1500x750_bqtvux.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-B-1200x600_xiwtcf.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-B-960x480_yq9r0g.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866480/portfolio/arabica-desktop-B-600x600_ptuynn.jpg" loading="lazy" alt="The Arabica website landing page in three different screen sizes; Desktop, tablet, and mobile" style="width:100%;">
+      </picture>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-A-3000x1500_gyzlj8.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-A-1500x750_xqvwx4.jpg">
+        <source loading="lazy" media="(min-width:992px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-A-1200x600_izhefa.jpg">
+        <source loading="lazy" media="(min-width:768px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-A-960x480_optlmf.jpg">
+        <img data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-A-600x600_oojsiq.jpg" loading="lazy" alt="The Arabica landing page on a tablet and phone, with an Arabica business card beside them" class="img-fluid lazyload" style="width:100%;">
+      </picture>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866480/portfolio/arabica-desktop-screens-3000x1500_t6v9vx.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-screens-1500x750_ckmmuw.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866479/portfolio/arabica-desktop-screens-1200x600_umd4dx.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866480/portfolio/arabica-desktop-screens-960x480_ifok0u.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866480/portfolio/arabica-desktop-screens-A-600x600_bsrmw7.jpg" loading="lazy" alt="The Arabica website landing page with all screen sections laid out" style="width:100%;">
+      </picture>
+    </div>
+    <div class="row container-fluid mx-auto px-0 mb-3">
+      <img src="https://res.cloudinary.com/dg92t6syv/image/upload/v1658866480/portfolio/arabica-desktop-screens-B-600x600_hpjihc.jpg" alt="The Arabica website landing page with all screen sections laid out- second section" loading="lazy" class="img-fluid lazyload mobile-only" />
+    </div>
+    <div class="col-md-8 mx-auto py-2">
+      <h2 class="inner-h2 text-center py-3">Style Guide</h2>
+      <p>Using my brand book as a guide, I began with laying out a basic wireframe with the components I wanted. I referred to my brand book regular to ensure the landing page matched the look and feel of my brand. The most important thing was to reiterate the feelings of nature and abstraction in the colors and artwork, as well as to use the motif of the watermark circle from the logo throughout the landing page. The colors were pulled from the brand book, as well as the alternate typefaces, Carter One and Source Sans Pro.</p>
+      <p>The icons (such as the arrows) were created in Figma using the pen tool, or hand-drawn with the pencil tool. The imagery and motifs were taken from Rawpixel and Unsplash, and edited using a mixture of Photoshop, Illustrator, and Affinity Designer.</p>
+    </div>
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483944/portfolio/arabica-wireframe-3000x1500_zqlwjp.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483944/portfolio/arabica-wireframe-1500x750_khnvba.jpg">
+        <source loading="lazy" media="(min-width:992px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483944/portfolio/arabica-wireframe-1200x600_qjotvy.jpg">
+        <source loading="lazy" media="(min-width:768px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483944/portfolio/arabica-wireframe-960x480_vchklb.jpg">
+        <img data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483943/portfolio/arabica-wireframe-600x600_yilwwb.jpg" loading="lazy" alt="The Arabica landing page wireframe (in black and white)" class="img-fluid lazyload" style="width:100%;">
+      </picture>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483943/portfolio/arabica-style-guide-3000x1500_ocjcbu.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483943/portfolio/arabica-style-guide-1500x750_px5xbp.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483943/portfolio/arabica-style-guide-1200x600_hdr0bi.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483943/portfolio/arabica-style-guide-960x480_nff6np.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659483943/portfolio/arabica-style-guide-600x600_bj3m9b.jpg" loading="lazy" alt="The Arabica website color and font guide" style="width:100%;">
+      </picture>
+    </div>
+  </main>
+  <footer class="container-fluid bg-dark text-muted">
+    <div class="container pt-4 mx-auto text-center">
+      <p class="fs-5 mb-0 pb-0 mt-1">&copy;Kelsey Hood</p>
+    </div>
+  </footer>
+
+  <!-- LAZY LOAD IMAGES PLUGIN-->
+  <!-- https://github.com/tuupola/lazyload -->
+  <!--
+    if <img loading="lazy".../> doesn't work, use the plugin
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script>
+    lazyload();
+  </script>
+</body>
+</html>

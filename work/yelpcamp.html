@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YelpCamp App</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top mainNav" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><span class="brand-txt fw-bold">Kelsey <span class="fw-bold dash-blue">//</span> <span style="color:#0076a0;">Hood</span></span></a>
+      <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../current-work.html">Current Work</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#web">Web &amp; UI</a> <!-- YelpCamp, MCS Site, Vue.js Shop-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#design">Graphic Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid main-content gallery-main-content">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" src="img/bg-full.jpg">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <div class="row mt-5 mx-auto">
+      <div class="col-sm-12 col-md-8 mx-auto mb-3 gallery-text-container">
+        <div class="gallery-text">
+          <h1 class="text-center fs-1">YelpCamp App</h1>
+          <p class="fw-bold fs-4 text-muted border-subhead pt-1 text-center">2021</p>
+          <!-- <p class="lead ">Bootstrap // HTML // CSS // JavaScript</p> -->
+          <p class="pt-3 text-center">This was a project for my Web Development Bootcamp class. The site is an app that utilizes Express, Node.js, and MongoDB (for database hosting). Mapbox is also integrated for the dynamic map. It gives users the ability to create/login to an account, create, rate, or edit/delete campsites and have the content update dynamically.</p>
+         <!--- <div class="mx-auto text-center">
+            <a href="https://calm-castle-86315.herokuapp.com/" title="YelpCamp App" class="btn btn-dark view-btn">View YelpCamp Site</a>           
+          </div> -->
+        </div>
+      </div>
+      <div class="col-12">
+        <!-- IMG CAROUSEL -->
+        <!-- <div id="carouselExampleIndicators" class="carousel carousel-dark slide gallery-carousel mb-5" data-bs-ride="carousel" style="height: 500px; background-color: turquoise;">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." class="img-fluid d-block" alt="..." >
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="img-fluid d-block" alt="..." >
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="img-fluid d-block" alt="..." >
+            </div>
+          </div>
+        </div>   -->
+        <!-- END CAROUSEL -->
+      </div>
+    </div>
+    <div class="row container-fluid my-5 mx-auto px-0">
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584616/portfolio/img-yelpcamp-tabmobile-3000x1500-min_m6o1yw.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584616/portfolio/img-yelpcamp-tabmobile-1500x750-min_rpi0i0.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584616/portfolio/img-yelpcamp-tabmobile-1200x600-min_uhjevw.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-tabmobile-960x480-min_t6wflw.jpg"> <!-- Original breakpoint: 768 -->
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-tabmobile-600x600-min_rg7jo0.jpg" loading="lazy" alt="A tablet in horizontal/landscape view and an iPhone in vertical/portrait view against a wall." style="width:100%;">
+      </picture>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584616/portfolio/img-yelpcamp-mobile-3000x1500-min_uiccb6.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-mobile-1500x750-min_j5cthb.jpg">
+        <source loading="lazy" media="(min-width:992px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-mobile-1200x600-min_fkyjou.jpg">
+        <source loading="lazy" media="(min-width:700px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-mobile-960x480-min_tuzxah.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-mobile-600x600-min_yircsv.jpg" loading="lazy" alt="Three iPhones laying next to each other in a row, displaying various YelpCamp pages" style="width:100%;">
+      </picture>
+      <div class="row container-fluid px-0 mx-auto">
+        <div class="col-md-6 col-sm-12 mb-3">
+          <picture class="col-12 mb-3">
+            <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-iconography-1500-min_inxxxl.jpg">
+            <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629602264/portfolio/img-yelpcamp-iconography-1200_r7qtga.jpg">
+            <source loading="lazy" media="(min-width:750px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-iconography-960-min_qagris.jpg">
+            <source loading="lazy" media="(min-width:576px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584615/portfolio/img-yelpcamp-iconography-750-min_gealgg.jpg"> 
+            <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584614/portfolio/img-yelpcamp-iconography-600-min_fwgpfd.jpg" loading="lazy" alt="The YelpCamp logo and the six user icon options" style="width:100%;">
+          </picture>
+          <!-- <img src="../img/img-yelpcamp-iconography-600.jpg" alt="The YelpCamp logo and the six user icon options" style="width:100%"> -->
+        </div>
+        <div class="col-md-6">
+          <picture class="col-12 mb-3">
+            <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584614/portfolio/img-yelpcamp-colors-1500-min_cvaagm.jpg">
+            <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629602273/portfolio/img-yelpcamp-colors-1200_gmmoj9.jpg">
+            <source loading="lazy" media="(min-width:750px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584614/portfolio/img-yelpcamp-colors-960-min_fbhkvb.jpg">
+            <source loading="lazy" media="(min-width:576px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584614/portfolio/img-yelpcamp-colors-750-min_c2drk7.jpg">
+            <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584614/portfolio/img-yelpcamp-colors-600-min_bofice.jpg" loading="lazy" alt="A picture of the color schemes and mountain image used for the YelpCamp App" style="width:100%;">
+          </picture>
+          <!-- <img src="../img/img-yelpcamp-colors-600.jpg" alt="A picture of the color schemes and mountain image used for the YelpCamp App"> -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid bg-dark text-muted">
+    <div class="container pt-4 mx-auto text-center">
+      <p class="fs-5 mb-0 pb-0 mt-1">&copy;Kelsey Hood</p>
+    </div>
+  </footer>
+
+  <!-- LAZY LOAD IMAGES PLUGIN-->
+  <!-- https://github.com/tuupola/lazyload -->
+  <!--
+    if <img loading="lazy".../> doesn't work, use the plugin
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script>
+    lazyload();
+  </script>
+</body>
+</html>

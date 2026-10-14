@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon Apartments</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .mobile-only {
+      display: block;
+    }
+    @media screen and (min-width:600px) {
+      .mobile-only {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top mainNav" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><span class="brand-txt fw-bold">Kelsey <span class="fw-bold dash-blue">//</span> <span style="color:#0076a0;">Hood</span></span></a>
+      <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../current-work.html">Current Work</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#web">Web &amp; UI</a> <!-- YelpCamp, MCS Site, Vue.js Shop-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#design">Graphic Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid main-content gallery-main-content">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" src="img/bg-full.jpg">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <div class="row mt-5 mx-auto">
+      <div class="col-sm-12 col-md-8 mx-auto mb-3 gallery-text-container">
+        <div class="gallery-text">
+          <h1 class="text-center fs-1">Horizon Apartments</h1>
+          <p class="fw-bold fs-4 text-muted border-subhead pt-1 text-center">2022</p>
+          <!-- <p class="lead ">Bootstrap // HTML // CSS // JavaScript</p> -->
+          <p class="pt-3 text-center">A small website built in Figma of a fake Apartment finder site.</p>
+          <!-- <div class="mx-auto text-center">
+            <button class="btn btn-dark view-btn">View Site</button>
+            <button class="btn btn-link gallery-site-btn">View Original MCS Website</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- PROMPT (+ research, gathering information, initial sketches)-->
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-desktop-3000x1500_lnwvam.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-desktop-1500x750_dt0ecc.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-desktop-1200x600_fu4t3o.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-desktop-960x480_nesxzd.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-desktop-600x600_s62jpw.jpg" loading="lazy" alt="Horizon Apartments application on desktop, laptop, and a cellphone screen" style="width:100%;">
+      </picture>
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">The Prompt</h2>
+        <p><b>THE APARTMENT PROJECT:</b> This site helps renters find a new apartment. Design an application that allows users to search for apartments in a specific area (or multiple areas), define criteria, and filter the results. In this case, a user wants to search for an apartment in a specific area, refine the results by a set of criteria, view the details about an apartment, and initiate contact with the owner.</p>
+        <p><b>RESEARCH AND PREPARATION: </b>Before getting started, I took a look at several apartment finder websites, like Zillow, Apartments.com, Trulia, and Rent. By taking notes and screenshots on the type of information they provided about apartments, how components were laid out, and other details, I was able to get an idea of how I should go about designing my application.</p>
+      </div>
+    </div>
+    <!-- USER FLOW -->
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">User Flow</h2>
+        <p>To get a feel for how a user might search for an apartment I walked through the process using Zillow and Apartments.com, pretending to be the user for my specific scenario, and made notes of the steps. I wanted to keep the flow as simple and specific to my particular case as possible. There are many other branches a user could take, even for my scenario, but I felt that would muddle the flow chart and distract from the overall goal of the project.</p>
+      </div>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458984/portfolio/horizon-apartments-user-flow-3000x1500_pmon2s.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458984/portfolio/horizon-apartments-user-flow-1500x750_zseyhx.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458984/portfolio/horizon-apartments-user-flow-1200x600_c0dxvm.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458984/portfolio/horizon-apartments-user-flow-960x480_wewznv.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458984/portfolio/horizon-apartments-user-flow-600x600_xdefya.jpg" loading="lazy" alt="A user flow chart for the Horizon Apartments application, in which a user visits the site, enters filter criteria, views details of an apartment, and contacts the owner" style="width:100%;">
+      </picture>
+    </div>
+    <!-- WIREFRAMES -->
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">The Wireframes</h2>
+        <p>The wireframe flow shows the process of searching for apartments in a specific location, seeing the results, filtering results, seeing the details of one apartment, and finally, contacting the owner. Both the map and the filter form are meant to be at a fixed position, and so the user will scroll to see more apartment results or see the rest of the filter form. I didn't show the rest of the landing page or apartment details screen, because the user flow primarily focused on the buttons at the top.</p>
+      </div>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-wireframe-3000x1500_ov9jd3.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-wireframe-1500x750_dtbn2j.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-wireframe-1200x600_qempjm.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-wireframe-960x480_vzsr7t.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458373/portfolio/horizon-apartments-wireframe-A-600x600_mllbky.jpg" loading="lazy" alt="A layout of the wireframe screens for the desktop version of the application" style="width:100%;">
+      </picture>
+      <div class="row container-fluid mx-auto px-0 mb-3">
+        <img src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458373/portfolio/horizon-apartments-wireframe-B-600x600_rbytvs.jpg" alt="A layout of the wireframe screens for the desktop version of the application second section" loading="lazy" class="img-fluid lazyload mobile-only" />
+      </div>
+    </div>
+    <!-- STYLE GUIDE (+ molecules, components, style book)-->
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">Style Guide and Logo</h2>
+        <p>My main two colors, purple and orange, came from a photo of the horizon during sunset. The blue is specifically for paragraph links and focus states since it's noticeable against the other colors. I used WebAim and a colorblind checker to ensure my main colors are accessible. I wanted an industrial-style font for my top headings, so I chose Teko, and then Nunito because its rounded, open letters counter that.</p>
+        <p>I've created logos for various situations: regular/desktop, mobile, printing, and perhaps even for various stationary purposes, such as envelopes, letterhead, etc. The main logo and icon logo would be used the most frequently and the other two versions are exceptions for specific use cases. They otherwise aren't necessary.</p>
+      </div>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-style-guide-3000x1500_wfxin2.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-style-guide-1500x750_ovuh8z.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-style-guide-1200x600_tcegqq.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-style-guide-960x480_lofwpt.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-style-guide-600x600_c9ej7j.jpg" loading="lazy" alt="The style guide for Horizon Apartments" style="width:100%;">
+      </picture>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458371/portfolio/horizon-apartments-logo-3000x1500_mx3blj.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458371/portfolio/horizon-apartments-logo-1500x750_rsfavs.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458371/portfolio/horizon-apartments-logo-1200x600_l3lzwy.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458371/portfolio/horizon-apartments-logo-960x480_wfrhmk.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-logo-600x600_q1mnsr.jpg" loading="lazy" alt="The logo and its alternate versions" style="width:100%;">
+      </picture>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-components-3000x1500_qzdfkn.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-components-1500x750_vwi9zk.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-components-1200x600_o9aatp.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-components-960x480_yp4pdy.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-components-600x600_txpssh.jpg" loading="lazy" alt="Components and various modules, with there base, hover, and active states showcased" style="width:100%;">
+      </picture>
+    </div>
+    <!-- LANDING PAGE -->
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">Designing the Landing Page</h2>
+        <p>The mice are there to indicate state changes (either hover or active state) for clickable items where it isn't otherwise apparent that the item can be interacted with. The most difficult part was deciding which pieces of information would be most important for a rental listing, as well as narrowing down what options a renter might be interested in on the home page.</p>
+      </div>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-landing-3000x1500_afipsj.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-landing-1500x750_vbkmyb.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-landing-1200x600_cfpvbm.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-landing-960x480_hoaqlf.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458370/portfolio/horizon-apartments-landing-600x600_mgrja5.jpg" loading="lazy" alt="The full-color landing page of the Horizon Apartments application" style="width:100%;">
+      </picture>
+    </div>
+    <!-- Other Screens -->
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">Other Screens</h2>
+        <p>I struggled on deciding what content to incorporate and how to lay it out. Viewing different rental sites, there's a lot of information on the search results and details screens, which felt like too much.</p>
+        <p><b>MOBILE VERSION: </b>I moved my content to keep it 1-2 columns. The map screen looks weird, because in prototype mode, you can move the map around to replicate how it would be in reality. The other elements on that screen are fixed. A lot of content has been hidden behind accordions to save on scrolling and certain elements are now fixed so that users always have access to those buttons.</p>
+      </div>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-desktop-2-3000x1500_qbbjsm.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-desktop-2-1500x750_g4da4z.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-desktop-2-1200x600_v9gx0c.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-desktop-2-960x480_pmfbuq.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458369/portfolio/horizon-apartments-desktop-2-600x600_chgwno.jpg" loading="lazy" alt="Three desktop screens that showcase different pages of the Horizon Apartments application" style="width:100%;">
+      </picture>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458372/portfolio/horizon-apartments-mobile-3000x1500_kjyc3v.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458371/portfolio/horizon-apartments-mobile-1500x750_w0xdcj.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458371/portfolio/horizon-apartments-mobile-1200x600_kcvgku.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458371/portfolio/horizon-apartments-mobile-960x480_dmdidx.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659458371/portfolio/horizon-apartments-mobile-600x600_qvzgd6.jpg" loading="lazy" alt="Four mobile phones showcasing various screens from the Horizon Apartments application" style="width:100%;">
+      </picture>
+    </div>
+    <!-- PROTOTYPING -->
+    <div class="row container-fluid mt-5 mx-auto px-0 mb-5">
+      <!-- <picture class="col-md-6 mb-3">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659460129/portfolio/horizon-apartments-prototype-1500x1500_w0wlt8.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659460129/portfolio/horizon-apartments-prototype-1200x1200_ho8qcy.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1659460129/portfolio/horizon-apartments-prototype-960x960_jj9eom.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1659460129/portfolio/horizon-apartments-prototype-600x600_hf5bvm.jpg" loading="lazy" alt="Prototype flow of the Horizon Apartments application" style="width:100%;">
+      </picture> -->
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">Prototyping</h2>
+        <p class="text-center">The final prototype replicates the flow the user will take.</p>
+        <div class="mx-auto text-center">
+          <a href="https://www.figma.com/proto/bnqP63vVLRL8GjkVlkILnm/DesignLab-Desktop?node-id=0%3A1&scaling=scale-down&starting-point-node-id=48%3A138&show-proto-sidebar=1" title="Horizon Apartments Desktop Application" class="btn btn-dark view-btn mb-2">View Desktop Prototype</a>
+          <a href="https://www.figma.com/proto/M0AAyOPPwh6HOEK9PTjVkt/DesignLab-Mobile?node-id=0%3A1&scaling=scale-down&starting-point-node-id=201%3A594&show-proto-sidebar=1" title="Horizon Apartments Mobile Application" class="btn btn-dark view-btn mb-2">View Mobile Prototype</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid bg-dark text-muted">
+    <div class="container pt-4 mx-auto text-center">
+      <p class="fs-5 mb-0 pb-0 mt-1">&copy;Kelsey Hood</p>
+    </div>
+  </footer>
+
+  <!-- LAZY LOAD IMAGES PLUGIN-->
+  <!-- https://github.com/tuupola/lazyload -->
+  <!--
+    if <img loading="lazy".../> doesn't work, use the plugin
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script>
+    lazyload();
+  </script>
+</body>
+</html>

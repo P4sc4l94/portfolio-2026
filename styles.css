@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+* GENERAL STYLES
+*/
+// .barlow-thin {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 100;
+//   font-style: normal;
+// }
+
+// .barlow-extralight {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 200;
+//   font-style: normal;
+// }
+
+// .barlow-light {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// .barlow-regular {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// .barlow-medium {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// .barlow-semibold {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+// .barlow-bold {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// .barlow-extrabold {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 800;
+//   font-style: normal;
+// }
+
+// .barlow-black {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+// .barlow-thin-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 100;
+//   font-style: italic;
+// }
+
+// .barlow-extralight-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 200;
+//   font-style: italic;
+// }
+
+// .barlow-light-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 300;
+//   font-style: italic;
+// }
+
+// .barlow-regular-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 400;
+//   font-style: italic;
+// }
+
+// .barlow-medium-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 500;
+//   font-style: italic;
+// }
+
+// .barlow-semibold-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 600;
+//   font-style: italic;
+// }
+
+// .barlow-bold-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 700;
+//   font-style: italic;
+// }
+
+// .barlow-extrabold-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 800;
+//   font-style: italic;
+// }
+
+// .barlow-black-italic {
+//   font-family: "Barlow", sans-serif;
+//   font-weight: 900;
+//   font-style: italic;
+// }
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+// .noto-sans-<uniquifier> {
+//   font-family: "Noto Sans", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+//   font-variation-settings:
+//     "wdth" 100;
+// }
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Verdana, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  position: relative;
+  /* background-color: whitesmoke; */
+}
+
+header {
+  padding-top: 50px;
+}
+main {
+  position: relative;
+}
+
+h1 {
+  font-family: "Zilla Slab", "Georgia", "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  font-size: 3.5rem;
+  line-height: 1;
+  /* background-color: thistle; */
+}
+
+h2 {
+  font-family: "Zilla Slab", "Georgia", "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  font-size: 2.5rem;
+  line-height: 1;
+  /* background-color: thistle; */
+}
+
+h2.inner-h2 {
+  font-weight: 500;
+  color: #0076a0;
+}
+
+h3 {
+  font-family: "Zilla Slab", "Georgia", "Times New Roman", serif;
+  font-weight: 500;
+  color: #0076a0;
+  letter-spacing: 0.15rem;
+  font-size: 1.95rem;
+}
+
+p {
+  font-family: "Montserrat", Verdana, Arial, sans-serif;
+  line-height: 1.75rem;
+  letter-spacing: 0.05rem;
+}
+
+b {
+  font-weight: 700;
+}
+
+ul,
+li {
+  font-family: "Montserrat", Verdana, Arial, sans-serif;
+  line-height: 1.75rem;
+  letter-spacing: 0.05rem;
+}
+
+ul.two-col {
+  list-style: none;
+}
+
+.two-col li {
+  color: #0076a0;
+  font-weight: bold;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.dash-blue {
+  letter-spacing: 0.2rem;
+  color: #0076a0;
+}
+
+.border-style {
+  padding-left: 10px;
+  border-left: 8px solid #56a38a;
+}
+
+.border-subhead {
+  padding-left: 18px;
+}
+
+.lead {
+  color: lightseagreen;
+}
+
+.mobile-only {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .mobile-only { display: none;}
+}
+
+/*
+* INTRO SECTION
+*/
+
+.intro-container {
+  background-color: #fff;
+  // background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-600x800_z9m7rq.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+@media screen and (min-width: 600px) {
+  .intro-container { 
+    background-color: steelblue;
+    background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-960x960_kumrgc.jpg"); }
+}
+@media screen and (min-width: 960px) {
+  .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-1200x800_pjhy87.jpg"); }
+}
+@media screen and (min-width: 1200px) {
+  .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-1500x750_rkkvly.jpg"); }
+}
+@media screen and (min-width: 1400px) {
+  .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-3000x1500_zyavmx.jpg"); }
+}
+
+.intro-container img {
+  width: 80%;
+  /* background-color: thistle; */
+}
+
+// .intro-txt-container {
+  
+  
+// }
+@media screen and (min-width: 600px) {
+  .intro-txt-container {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+}
+
+.cv-btn {
+  background-color: #0076a0;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-left: 18px;
+}
+
+/*
+* NAVBAR
+*/
+
+.mainNav {
+  color: whitesmoke;
+  font-family: "Montserrat", Verdana, Arial, sans-serif;
+  background-color: whitesmoke;
+  color: gray;
+  /* border-bottom: 2px solid gray; */
+}
+
+.mainNav a,
+.mainNav a:visited {
+  color: gray;
+}
+
+.mainNav ul li {
+  /* background-color: teal; */
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.mainNav ul li:hover,
+.mainNav a:hover {
+  color: #0076a0;
+}
+
+.mainNav ul li:active,
+.mainNav a:active {
+  color: #4bafdc;
+}
+
+.brand-txt {
+  font-family: "Zilla Slab", Verdana, Arial, sans-serif;
+  /* text-transform: uppercase; */
+  color: black;
+  letter-spacing: 0.05rem;
+}
+
+/*
+* HOME PAGE GALLERY
+*/
+.work-title {
+  font-family: "Montserrat", Verdana, Arial, sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.small-date {
+  font-family: "Montserrat", Verdana, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.home-img-container {
+  /* height: 600px;
+  width: 600px; */
+  /* background: thistle; */
+  position: relative;
+}
+
+.home-img-container img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 128, 128, 0.95);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.mobile-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 128, 128, 0.95);
+  display: none;
+}
+
+.mobile-overlay-txt {
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  /* background-color: tomato; */
+  width: 100%;
+  color: whitesmoke;
+  position: relative;
+  top: 20%;
+}
+
+.mobile-overlay-link,
+.mobile-overlay-link:visited {
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.mobile-overlay-link:hover {
+  color: wheat;
+  text-decoration: none;
+}
+
+.mobile-overlay-link:active {
+  color: gold;
+  text-decoration: underline;
+}
+
+.home-img-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-btn {
+  width: 100px;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.overlay-btn:hover {
+  background-color: wheat;
+}
+
+/*
+* ABOUT SECTION
+*/
+.about-me-container {
+  // background-image: url("img/bg-triangle-blue.svg");
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-left: 1rem;
+}
+
+.progress {
+  background-color: darkslategray;
+}
+
+.progress-bar {
+  background-color: #56a38a;
+}
+
+.skills-list-container {
+  width: 100%;
+}
+
+.skills-list-item {
+  width: 17%;
+  padding-bottom: 1rem;
+  letter-spacing: 0;
+  font-size: 0.7rem;
+  filter: grayscale(100%);
+  transition: filter 0.2s;
+}
+// .skills-list-item-vertical {
+//   width: 13%;
+// }
+
+.skills-list-item:hover {
+  filter: grayscale(0%);
+}
+
+.experience-container {
+  margin-top: 1rem;
+}
+
+/*
+* GALLERY PAGE(S)
+*/
+.view-btn {
+  background-color: #56a38a;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/*
+* CONTACT US
+*/
+
+.contact-container {
+  width: 100%;
+  background-color: teal;
+  /* background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%); */
+  background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-600x800_sfpwd0.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 600px) {
+  .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-960x960_jh48uo.jpg"); }
+}
+@media screen and (min-width: 960px) {
+  .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-1200x600_ezlltw.jpg"); }
+}
+@media screen and (min-width: 1200px) {
+  .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-1500x750_q5v3zw.jpg"); }
+}
+@media screen and (min-width: 1400px) {
+  .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-3000x1500_lzukve.jpg"); }
+}
+
+.card-container {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: 0 auto;
+  width: 40%;
+  min-width: 350px;
+}
+
+.card-container-body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*
+* FOOTER
+*/
+footer {
+  min-height: 95px;
+  position: relative;
+  bottom: 0;
+}
+
+/*
+* MEDIA QUERIES
+*/
+@media only screen and (max-width: 1200px) {
+  /* large */
+}
+
+@media only screen and (max-width: 992px) {
+  /* medium */
+  .intro-text {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .intro-txt-container img {
+    max-width: 350px;
+  }
+
+  .intro-txt-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .gallery-carousel {
+    height: auto;
+    min-height: 400px;
+    margin-bottom: 3rem;
+  }
+
+  .gallery-text-container {
+    position: static;
+    /* background-color: teal; */
+  }
+  .gallery-text {
+    position: static;
+    /* bottom: 0; */
+    /* background-color: thistle; */
+  }
+
+  .skills-list-item {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* small */
+  .gallery-main-content {
+    padding-left: auto;
+  }
+
+  .gallery-text-container {
+    position: static;
+    /* background-color: teal; */
+  }
+  .gallery-text {
+    position: static;
+    /* bottom: 0; */
+    /* background-color: thistle; */
+  }
+
+  // .about-me-container {
+  //   background-image: none;
+  // }
+
+  .skills-container {
+    margin-top: 5px;
+  }
+
+  .skills-list-item {
+    width: 30%;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  .experience-container {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* x-small */
+  .mobile-overlay {
+    display: inline-block;
+  }
+  .overlay {
+    display: none;
+  }
+
+  .skills-list-item {
+    width: 50%;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+}

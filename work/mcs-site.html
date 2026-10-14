@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Care Summit Site</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top mainNav" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><span class="brand-txt fw-bold">Kelsey <span class="fw-bold dash-blue">//</span> <span style="color:#0076a0;">Hood</span></span></a>
+      <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../current-work.html">Current Work</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="../about.html">About Me</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#web">Web &amp; UI</a> <!-- YelpCamp, MCS Site, Vue.js Shop-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#design">Graphic Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid main-content gallery-main-content">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" src="img/bg-full.jpg">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <div class="row mt-5 mx-auto">
+      <div class="col-sm-12 col-md-8 mx-auto mb-3 gallery-text-container">
+        <div class="gallery-text">
+          <h1 class="text-center fs-1">Memory Care Summit</h1>
+          <p class="fw-bold fs-4 text-muted border-subhead pt-1 text-center">2021</p>
+          <!-- <p class="lead ">Bootstrap // HTML // CSS // JavaScript</p> -->
+          <p class="pt-3 text-center">This was a personal project I did while I was redesigning the Memory Care Summit materials. I wanted to have a website that reflected the professionalism of the Summit without the constraints of UMBC's site template.</p>
+          <div class="mx-auto text-center">
+            <a href="https://p4sc4l94.github.io/mcs/" class="btn btn-dark view-btn mb-3" title="Memory Care Summit redsigned site">View MCS Site</a>
+            <a href="https://erickson.umbc.edu/educational_events/memory-care-summit/mcs2019/" title="Erickson School's Memory Care Summit page" class="btn btn-link gallery-site-btn mb-3">View Original MCS Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">Initial Concept</h2>
+        <p>After sketching initial page layout ideas, I brought those over into Photoshop and created various layouts.</p>
+      </div>
+      <div class="col-md-6 mx-auto mb-3">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-orig-home-min_uykpze.jpg" loading="lazy" alt="Original home page design concept for the MCS website" style="width:100%" >
+      </div>
+      <div class="col-md-6 mx-auto mb-3">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584586/portfolio/img-mcs-orig-layout-min_i8hjeo.jpg" loading="lazy" style="width:100%" alt="Original layout design template for the MCS website">
+      </div>
+    </div>
+    <div class="row container-fluid mt-5 mb-1 mx-auto px-0">
+      <div class="col-md-8 mx-auto py-2">
+        <h2 class="inner-h2 text-center py-3">Final Version</h2>
+        <p>I cleaned up the layout: added more whitespace, darkened the colors for visibility, and settled on a color palette. I also rearranged sections so they are able to adjust fluidly to different viewports. Once satisfied, I built the website in Visual Studio and used Boostrap to assist with structuring the pages.</p>
+      </div>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-mobile-view-3000x1500-min_d1gszj.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-mobile-view-1500x750-min_zluk7s.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-mobile-view-1200x600-min_ct6gc2.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-mobile-view-960x480-min_heogf0.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-mobile-view-600x600-min_wqmipz.jpg" loading="lazy" alt="Three iphones with the Memory Care website on their screens" style="width:100%;">
+      </picture>
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-all-view-3000x1500-min_qpsdxv.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-all-view-1500x750-min_ecfxdb.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-all-view-1200x600-min_xtbt4x.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-all-view-960x480-min_wvi0mp.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584585/portfolio/img-mcs-all-view-600x600-min_htqdqu.jpg" loading="lazy" alt="A desktop computer, laptop and tablet, all displaying different screens from the Memory Care Summit website" style="width:100%;">
+      </picture>
+    </div>
+  </main>
+  <footer class="container-fluid bg-dark text-muted">
+    <div class="container pt-4 mx-auto text-center">
+      <p class="fs-5 mb-0 pb-0 mt-1">&copy;Kelsey Hood</p>
+    </div>
+  </footer>
+
+  <!-- LAZY LOAD IMAGES PLUGIN-->
+  <!-- https://github.com/tuupola/lazyload -->
+  <!--
+    if <img loading="lazy".../> doesn't work, use the plugin
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script>
+    lazyload();
+  </script>
+</body>
+</html>

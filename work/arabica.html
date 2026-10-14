@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabica Coffee Branding</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top mainNav" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><span class="brand-txt fw-bold">Kelsey <span class="fw-bold dash-blue">//</span> <span style="color:#0076a0;">Hood</span></span></a>
+      <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../current-work.html">Current Work</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#web">Web &amp; UI</a> <!-- YelpCamp, MCS Site, Vue.js Shop-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#design">Graphic Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container-fluid main-content gallery-main-content">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" src="img/bg-full.jpg">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <div class="row mt-5 mx-auto">
+      <div class="col-sm-12 col-md-8 mx-auto mb-3 gallery-text-container">
+        <div class="gallery-text">
+          <h1 class="text-center fs-1">Arabica Coffee Branding</h1>
+          <p class="fw-bold fs-4 text-muted border-subhead pt-1 text-center">2019</p>
+          <!-- <p class="lead ">Bootstrap // HTML // CSS // JavaScript</p> -->
+          <p class="pt-3 text-center">A brand guide I created for a fake company, Arabica Premium Coffee; I designed the overall color scheme, produced product mockups, company stationery, and put it all together in a brand guide.</p>
+          <!-- <div class="mx-auto text-center">
+            <button class="btn btn-dark view-btn">View Site</button>
+            <button class="btn btn-link gallery-site-btn">View Original MCS Website</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="row container-fluid mt-5 mx-auto px-0">
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-stationary-3000x1500-min_vchpdr.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-stationary-1500x750-min_ankltz.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-stationary-1200x600-min_kv4zin.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-stationary-960x480-min_ymadlu.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-stationary-600x600-min_rgodwm.jpg" loading="lazy" alt="Various Arabica stationary items laid out on a grid" style="width:100%;">
+      </picture>
+      <!-- <picture class="col-12 mb-3">
+        <source media="(min-width:1400px)" srcset="../img/img-mcs-all-view-3000x1500">
+        <source media="(min-width:1200px)" srcset="../img/img-mcs-all-view-1500x750">
+        <source media="(min-width:992px)" srcset="../img/img-mcs-all-view-1200x600">
+        <source media="(min-width:768px)" srcset="../img/img-mcs-all-view-960x480">
+        <img src="../img/img-mcs-all-view-600x600" alt="Three iphones with the Memory Care website on their screens" class="img-fluid" style="width:100%;">
+      </picture> -->
+    </div>
+    <div class="row container-fluid mx-auto px-0">
+        <picture class="col-md-6 mb-3">
+          <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-1500-min_dzt90l.jpg">
+          <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-1200-min_ybitah.jpg">
+          <source loading="lazy" media="(min-width:750px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-960-min_pmghds.jpg">
+          <source loading="lazy" media="(min-width:576px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-750-min_yhqzyb.jpg">
+          <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-600-min_gcyoyy.jpg" loading="lazy" alt="A picture of a shipping tube with a label that has the Arabica logo and a company message." style="width:100%;">
+        </picture>
+        <picture class="col-md-6 mb-3">
+          <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-card-1500-min_b8uace.jpg">
+          <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-card-1200-min_ohdoso.jpg">
+          <source loading="lazy" media="(min-width:750px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-card-960-min_qaglxa.jpg">
+          <source loading="lazy" media="(min-width:576px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-card-750-min_xvw0ts.jpg">
+          <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584553/portfolio/img-arabica-card-600-min_n0hfrv.jpg" loading="lazy" alt="A picture of the front and back of an Arabica business card" style="width:100%;">
+        </picture>
+    </div>
+    <div class="row container-fluid mx-auto px-0">
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-bag-3000x1500-min_rhfjvh.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584551/portfolio/img-arabica-bag-1500x750-min_q5dywg.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584551/portfolio/img-arabica-bag-1200x600-min_qudc0l.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584551/portfolio/img-arabica-bag-960x480-min_g8plms.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584551/portfolio/img-arabica-bag-600x600-min_hhqfve.jpg" loading="lazy" alt="Two Arabica brand tote bags, one with a red pattern, and one with a green pattern respectively" style="width:100%;">
+      </picture>
+    </div>
+    <div class="row container-fluid mx-auto px-0">
+      <picture class="col-md-6 mb-3">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584555/portfolio/img-arabica-tube-red-1500-min_t1p4zn.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-red-1200-min_x8wzd8.jpg">
+        <source loading="lazy" media="(min-width:750px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-red-960-min_zkv4lq.jpg">
+        <source loading="lazy" media="(min-width:576px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-red-750-min_zrvxa3.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584554/portfolio/img-arabica-tube-red-600-min_ayuift.jpg" loading="lazy" alt="A picture of a shipping tube with a label that has the Arabica logo and a company message." style="width:100%;">
+      </picture>
+      <picture class="col-md-6 mb-3">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-box-1500-min_e5mjq6.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-box-1200-min_xsyicf.jpg">
+        <source loading="lazy" media="(min-width:750px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-box-960-min_nfqikq.jpg">
+        <source loading="lazy" media="(min-width:576px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-box-750-min_w6tx4m.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584551/portfolio/img-arabica-box-600-min_vlqquw.jpg" loading="lazy" alt="Three shipping boxes stacked upright (two white boxes with the middle one being red), with each having a different abstract pattern" style="width:100%;">
+      </picture>
+    </div>
+    <div class="row container-fluid mx-auto px-0 mb-3">
+      <picture class="col-12 mb-3">
+        <source loading="lazy" media="(min-width:1400px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-brand-book-3000x1500-min_rwxe0o.jpg">
+        <source loading="lazy" media="(min-width:1200px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-brand-book-1500x750-min_ikg6cq.jpg">
+        <source loading="lazy" media="(min-width:960px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-brand-book-1200x600-min_gin2mw.jpg">
+        <source loading="lazy" media="(min-width:600px)" srcset="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-brand-book-960x480-min_w9gnah.jpg">
+        <img class="img-fluid lazyload" data-src="https://res.cloudinary.com/dg92t6syv/image/upload/v1629584552/portfolio/img-arabica-brand-book-600x600-min_k25duj.jpg" loading="lazy" alt="Three spiral-bound books laid open with different pages of the Arabica brand guide shown" style="width:100%;">
+      </picture>
+    </div>
+  </main>
+  <footer class="container-fluid bg-dark text-muted">
+    <div class="container pt-4 mx-auto text-center">
+      <p class="fs-5 mb-0 pb-0 mt-1">&copy;Kelsey Hood</p>
+    </div>
+  </footer>
+
+  <!-- LAZY LOAD IMAGES PLUGIN-->
+  <!-- https://github.com/tuupola/lazyload -->
+  <!--
+    if <img loading="lazy".../> doesn't work, use the plugin
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script>
+    lazyload();
+  </script>
+</body>
+</html>
