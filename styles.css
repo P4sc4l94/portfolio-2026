@@ -244,17 +244,19 @@ img {
 @media screen and (min-width: 600px) {
   .intro-container { 
     background-color: steelblue;
-    background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-960x960_kumrgc.jpg"); }
+    // background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-960x960_kumrgc.jpg"); 
+    background: radial-gradient(circle at 50% 50% in oklch, oklch(98.03% 0.0272 197.55) 0.0%, oklch(97.13% 0.0382 197.18) 3.2%, oklch(95.92% 0.0515 196.49) 6.5%, oklch(94.47% 0.0671 195.73) 9.7%, oklch(92.85% 0.0831 195.13) 12.9%, oklch(91.11% 0.0975 194.91) 16.1%, oklch(89.33% 0.1086 195.29) 19.4%, oklch(87.56% 0.1156 196.39) 22.6%, oklch(85.77% 0.1202 198.01) 25.8%, oklch(83.90% 0.1230 200.06) 29.0%, oklch(81.88% 0.1244 202.47) 32.3%, oklch(79.64% 0.1247 205.14) 35.5%, oklch(77.10% 0.1243 208.02) 38.7%, oklch(74.18% 0.1233 211.09) 41.9%, oklch(70.81% 0.1208 214.58) 45.2%, oklch(67.12% 0.1172 218.39) 48.4%, oklch(63.27% 0.1128 222.37) 51.6%, oklch(59.40% 0.1083 226.37) 54.8%, oklch(55.66% 0.1041 230.24) 58.1%, oklch(52.17% 0.1007 233.89) 61.3%, oklch(48.74% 0.0976 237.51) 64.5%, oklch(45.35% 0.0947 241.13) 67.7%, oklch(42.03% 0.0918 244.66) 71.0%, oklch(38.82% 0.0888 248.05) 74.2%, oklch(35.77% 0.0856 251.24) 77.4%, oklch(32.90% 0.0819 254.15) 80.6%, oklch(30.08% 0.0774 256.92) 83.9%, oklch(27.30% 0.0724 259.56) 87.1%, oklch(24.67% 0.0672 262.01) 90.3%, oklch(22.32% 0.0623 264.17) 93.5%, oklch(20.36% 0.0581 265.97) 96.8%, oklch(18.90% 0.0551 267.32) 100.0%);
+  }
 }
-@media screen and (min-width: 960px) {
-  .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-1200x800_pjhy87.jpg"); }
-}
-@media screen and (min-width: 1200px) {
-  .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-1500x750_rkkvly.jpg"); }
-}
-@media screen and (min-width: 1400px) {
-  .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-3000x1500_zyavmx.jpg"); }
-}
+// @media screen and (min-width: 960px) {
+//   .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-1200x800_pjhy87.jpg"); }
+// }
+// @media screen and (min-width: 1200px) {
+//   .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-1500x750_rkkvly.jpg"); }
+// }
+// @media screen and (min-width: 1400px) {
+//   .intro-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653950290/portfolio/bg-blueWave-3000x1500_zyavmx.jpg"); }
+// }
 
 .intro-container img {
   width: 80%;
@@ -309,9 +311,19 @@ img {
   font-weight: 700;
 }
 
+.mainNav a {
+  transition: 0.25s all ease-in-out;
+}
+
 .mainNav ul li:hover,
-.mainNav a:hover {
+.mainNav a:hover,
+.mainNav ul li:focus,
+.mainNav a:focus {
   color: #0076a0;
+}
+
+.mainNav a:hover, .mainNav a:focus {
+  box-shadow: 0 2px #0076a0;
 }
 
 .mainNav ul li:active,
@@ -480,10 +492,21 @@ img {
 * GALLERY PAGE(S)
 */
 .view-btn {
-  background-color: #56a38a;
+  background-color: #0076a0;
   border: none;
   font-weight: bold;
   letter-spacing: 0.05em;
+}
+
+.btn-link {
+  color: #0250C5;
+  transition: 0.25s all ease-in-out;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: #022964;
+  text-decoration: none;
 }
 
 /*
@@ -498,18 +521,88 @@ img {
   background-size: cover;
   background-position: center;
 }
+
 @media screen and (min-width: 600px) {
-  .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-960x960_jh48uo.jpg"); }
+  .contact-container {
+    overflow: auto;
+    background: linear-gradient(315deg, #0a1020 3%, #10253c 38%, #0076a0 68%, #30d8ec 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
-@media screen and (min-width: 960px) {
-  .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-1200x600_ezlltw.jpg"); }
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
-@media screen and (min-width: 1200px) {
-  .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-1500x750_q5v3zw.jpg"); }
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
 }
-@media screen and (min-width: 1400px) {
-  .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-3000x1500_lzukve.jpg"); }
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
 }
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+}
+// @media screen and (min-width: 600px) {
+//   .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-960x960_jh48uo.jpg"); }
+// }
+// @media screen and (min-width: 960px) {
+//   .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-1200x600_ezlltw.jpg"); }
+// }
+// @media screen and (min-width: 1200px) {
+//   .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-1500x750_q5v3zw.jpg"); }
+// }
+// @media screen and (min-width: 1400px) {
+//   .contact-container { background-image: url("https://res.cloudinary.com/dg92t6syv/image/upload/v1653951118/portfolio/bg-dark-blue-3000x1500_lzukve.jpg"); }
+// }
 
 .card-container {
   background-color: whitesmoke;
@@ -517,8 +610,7 @@ img {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin: 0 auto;
-  width: 40%;
-  min-width: 350px;
+  max-width: 600px;
 }
 
 .card-container-body {
